@@ -1,0 +1,25 @@
+@import url(./components/button.css);
+
+body{
+    font-family: GoogleSands;
+}
+
+@font-face {
+    font-family: GoogleSands;
+    src: url("../assets/font/GoogleSans-Regular.otf");
+}
+
+@font-face {
+    font-family: GoogleSands Bold;
+    src: url("../assets/font/GoogleSans-Bold.otf");
+}
+
+@font-face {
+    font-family: GoogleSands Italic;
+    src: url("../assets/font/GoogleSans-Italic.otf");
+}
+
+.m-row{
+    width: 100%;
+    margin-top: 4px;
+}
