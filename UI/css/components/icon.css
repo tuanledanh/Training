@@ -1,0 +1,27 @@
+.m-btn-icon-add{
+    background-image: url(../../assets/icon/add.png);
+}
+
+.m-icon-search{
+    background-image: url(../../assets/icon/search.png);
+}
+
+.m-icon-16{
+    background-size: 16px 16px;
+}
+
+.m-icon-first-page{
+    background-image: url(../../assets/icon/btn-firstpage.svg);
+}
+
+.m-icon-prev-page{
+    background-image: url(../../assets/icon/btn-prev-page.svg);
+}
+
+.m-icon-next-page{
+    background-image: url(../../assets/icon/btn-next-page.svg);
+}
+
+.m-icon-last-page{
+    background-image: url(../../assets/icon/btn-lastpage.svg);
+}

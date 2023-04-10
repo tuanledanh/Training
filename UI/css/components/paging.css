@@ -1,0 +1,73 @@
+.m-paging{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.m-paging .m-paging-center{
+    display: flex;
+    text-align: center;
+}
+
+.m-paging .m-paging-center .m-btn-first{
+    border: unset;
+    background-color: unset;
+}
+
+.m-paging .m-paging-center .m-btn-prev{
+    border: unset;
+    background-color: unset;
+}
+
+.m-paging .m-paging-center .m-btn-next{
+    border: unset;
+    background-color: unset;
+}
+
+.m-paging .m-paging-center .m-btn-last{
+    border: unset;
+    background-color: unset;
+}
+
+.m-paging .m-page-number-group{
+    display: flex;
+}
+
+.m-paging button{
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    background-repeat: no-repeat;
+}
+
+.m-paging .m-page-number-group button.m-page-number{
+    border-radius: 50%;
+    border: 1px solid #BBBBBB;
+    margin: 13px 8px;
+}
+
+.m-paging .m-page-number-group button.m-page-number:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.m-paging .m-page-number-group button.m-page-number-selected{
+    background-color: #019160;
+    color: #fff;
+}
+
+.m-paging .m-paging-left{
+    position: absolute;
+    left: 0px;
+}
+
+.m-paging .m-paging-right{
+    position: absolute;
+    right: 0px;
+}

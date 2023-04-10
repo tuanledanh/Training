@@ -1,0 +1,99 @@
+.m-toast-box{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.m-toast-box .m-toast-item{
+    display: flex;
+    border-radius: 4px;
+    padding: 16px 8px 16px 16px;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+
+.m-toast-box .m-toast-item .m-toast-icon{
+    font-size: 24px;
+}
+
+.m-toast-box .m-toast-item .m-toast-text{
+    font-size: 13px;
+    color: #000;
+    margin: 0 16px 0 8px;
+}
+
+.m-toast-box .m-toast-item .m-toast-close{
+    font-size: 24px;
+    cursor: pointer; /*hiện hình bàn tay khi di chuột đến*/
+}
+
+/*toast-error*/
+.m-toast-box .m-toast-item.m-toast-error{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.m-toast-box .m-toast-item.m-toast-error .m-toast-icon{
+    color: rgb(245, 92, 92);
+}
+
+.m-toast-box .m-toast-item.m-toast-error .m-toast-close{
+    color: rgb(245, 92, 92);
+}
+
+.m-toast-box .m-toast-item.m-toast-error .m-toast-close:hover{
+    color: rgb(165, 0, 0);
+}
+
+/*toast-warning*/
+.m-toast-box .m-toast-item.m-toast-warning{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.m-toast-box .m-toast-item.m-toast-warning .m-toast-icon{
+    color: rgb(239, 180, 84);
+}
+
+.m-toast-box .m-toast-item.m-toast-warning .m-toast-close{
+    color: rgb(239, 180, 84);
+}
+
+.m-toast-box .m-toast-item.m-toast-warning .m-toast-close:hover{
+    color: rgb(255, 157, 0);
+}
+
+/*toast-success*/
+.m-toast-box .m-toast-item.m-toast-success{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.m-toast-box .m-toast-item.m-toast-success .m-toast-icon{
+    color: rgb(67, 185, 67);
+}
+
+.m-toast-box .m-toast-item.m-toast-success .m-toast-close{
+    color: rgb(67, 185, 67);
+}
+
+.m-toast-box .m-toast-item.m-toast-success .m-toast-close:hover{
+    color: rgb(2, 149, 27);
+}
+
+/*toast-info*/
+.m-toast-box .m-toast-item.m-toast-info{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.m-toast-box .m-toast-item.m-toast-info .m-toast-icon{
+    color: rgb(24, 133, 250);
+}
+
+.m-toast-box .m-toast-item.m-toast-info .m-toast-close{
+    color: rgb(24, 133, 250);
+}
+
+.m-toast-box .m-toast-item.m-toast-info .m-toast-close:hover{
+    color: rgb(0, 69, 142);
+}
+

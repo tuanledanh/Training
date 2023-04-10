@@ -1,4 +1,13 @@
 @import url(./components/button.css);
+@import url(./components/input.css);
+@import url(./components/icon.css);
+@import url(./components/toast.css);
+@import url(./components/table.css);
+@import url(./components/paging.css);
+@import url(./components/dialog.css);
+@import url(../assets/font/fontawesome-5.15.1/css/all.min.css);
+@import url(../assets/font/fontawesome-5.15.1/js/all.min.js);
+
 
 body{
     font-family: GoogleSands;

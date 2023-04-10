@@ -21,5 +21,147 @@
             <button class="m-btn m-btn-icon m-btn-icon-add">Lập hồ sơ</button>
         </div>
     </div>
+    <div class="m-row">
+        <label for="">3.Input</label>
+        <div class="m-row">
+            <input type="text" class="m-input" style="width: 200px;" placeholder="Tìm kiếm theo tên, số hồ sơ">
+        </div>
+        <div class="m-row" style="width: 200px;">
+            <div class="m-error-info">
+                <div class="m-error-arrow"></div>
+                <div class="m-error-text" style="width: 150px;">Mật khẩu không đúng định dạng</div>               
+            </div>
+            <input type="text" class="m-input m-input-error" style="width: 200px;" placeholder="Tìm kiếm theo tên, số hồ sơ">
+        </div>
+    </div>
+    <div class="m-row">
+        <label for="">4.Input icon</label>
+        <div class="m-row">
+            <input type="text" class="m-input m-input-icon m-icon-search m-icon-16" style="width: 200px;" placeholder="Tìm kiếm theo tên, số hồ sơ">
+        </div>
+    </div>
+    <div class="m-row">
+        <label for="">5. Toast messenger</label>
+        <div class="m-row">
+            <button id="btnShowToast" class="m-btn m-btn-icon m-btn-icon-add">Hiển thị hồ sơ toast manager</button>
+        </div>
+        <div class="m-toast-box">
+            <div class="m-toast-item m-toast-error">
+                <div class="m-toast-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                <div class="m-toast-text">Nội dung đi kèm tiêu đề</div>
+                <div class="m-toast-close"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="m-toast-item m-toast-warning">
+                <div class="m-toast-icon"><i class="fas fa-exclamation-circle"></i></div>
+                <div class="m-toast-text">Nội dung đi kèm tiêu đề</div>
+                <div class="m-toast-close"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="m-toast-item m-toast-success">
+                <div class="m-toast-icon"><i class="fas fa-check-circle"></i></div>
+                <div class="m-toast-text">Nội dung đi kèm tiêu đề</div>
+                <div class="m-toast-close"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="m-toast-item m-toast-info">
+                <div class="m-toast-icon"><i class="fas fa-info-circle"></i></div>
+                <div class="m-toast-text">Nội dung đi kèm tiêu đề</div>
+                <div class="m-toast-close"><i class="fas fa-times"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="m-row">
+        <label for="">6.Table</label>
+        <div class="m-row">
+            <table class="m-table">
+                <thead>
+                    <tr>
+                        <th class="text-align-left" style="width: 50px;">#</th>
+                        <th style="width: 150px;">Mã nhân viên</th>
+                        <th class="text-align-left" style="min-width: 200px;">Họ và tên</th>
+                        <th style="width: 150px;">Giới tính</th>
+                        <th style="width: 150px;">Ngày sinh</th>
+                        <th style="width: 150px;">Mức lương cơ bản</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-align-left">
+                            <input type="checkbox" checked>
+                        </td>
+                        <td class="text-align-left">MV00000</td>
+                        <td class="text-align-left">Kai Nakamura</td>
+                        <td class="text-align-left">Nam</td>
+                        <td class="text-align-left">01/01/1010</td>
+                        <td class="text-align-left">1000$</td>
+                    </tr>
+                    <tr>
+                        <td class="text-align-left">
+                            <input type="checkbox" checked>
+                        </td>
+                        <td class="text-align-left">MV00000</td>
+                        <td class="text-align-left">Kai Nakamura</td>
+                        <td class="text-align-left">Nam</td>
+                        <td class="text-align-left">01/01/1010</td>
+                        <td class="text-align-left">1000$</td>
+                    </tr>
+                    <tr class="m-row-selected">
+                        <td class="text-align-left">
+                            <input type="checkbox" checked>
+                        </td>
+                        <td class="text-align-left">MV00000</td>
+                        <td class="text-align-left">Kai Nakamura</td>
+                        <td class="text-align-left">Nam</td>
+                        <td class="text-align-left">01/01/1010</td>
+                        <td class="text-align-left">1000$</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="m-paging">
+                <!-- left -->
+                <div class="m-paging-left">
+                    Hiển thị 01-100/200 nhân viên
+                </div>
+                <!-- center -->
+                <div class="m-paging-center">
+                    <button class="m-btn-first m-icon-first-page"></button>
+                    <button class="m-btn-prev m-icon-prev-page"></button>
+                    <div class="m-page-number-group">
+                        <button class="m-page-number m-page-number-selected">1</button>
+                        <button class="m-page-number">2</button>
+                        <button class="m-page-number">3</button>
+                        <button class="m-page-number">4</button>
+                    </div>
+                    <button class="m-btn-next m-icon-next-page"></button>
+                    <button class="m-btn-last m-icon-last-page"></button>
+                </div>
+                <!-- right -->
+                <div class="m-paging-right">
+                    <select name="" id="">
+                        <option value="10">10 nhân viên/trang</option>
+                        <option value="20">20 nhân viên/trang</option>
+                        <option value="50">50 nhân viên/trang</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-row">
+        <label for="">7.Dialog</label>
+        <div class="m-row">
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.getElementById("btnShowToast").addEventListener("click", function(){
+            var toastBox = document.getElementsByClassName("m-toast-box"); 
+            /*
+            toastBox[0] lấy thk toastBox đầu tiên trong những thk cùng tên m-toast-box
+            */
+            toastBox[0].style.display = "block";
+            setTimeout(() => {
+                toastBox[0].style.display = "none";;
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
