@@ -1,0 +1,19 @@
+.m-dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(68, 69, 69, 0.198);
+}
+
+.m-dialog .m-dialog-content{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}

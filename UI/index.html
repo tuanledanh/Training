@@ -147,11 +147,20 @@
     <div class="m-row">
         <label for="">7.Dialog</label>
         <div class="m-row">
+            <button id="btnShowDialog" class="m-btn m-btn-icon m-btn-icon-add">Hiển thị dialog</button>
+        </div>
+        <div id="dlgDialog" class="m-dialog">
+            <div class="m-dialog-content">
+                <div class="m-dialog-header"></div>
+                <div class="m-dialog-body"></div>
+                <div class="m-dialog-footer"></div>
+            </div>
         </div>
     </div>
 
     <!-- JAVASCRIPT -->
     <script>
+        // JS cho toast manager
         document.getElementById("btnShowToast").addEventListener("click", function(){
             var toastBox = document.getElementsByClassName("m-toast-box"); 
             /*
@@ -160,6 +169,15 @@
             toastBox[0].style.display = "block";
             setTimeout(() => {
                 toastBox[0].style.display = "none";;
+            }, 2000);
+        });
+
+        // JS cho dialog
+        document.getElementById("btnShowDialog").addEventListener("click", function(){
+            var dialog = document.getElementsById("dlgDialog"); 
+            dialog.style.display = "block";
+            setTimeout(() => {
+                dialog.style.display = "none";;
             }, 2000);
         });
     </script>

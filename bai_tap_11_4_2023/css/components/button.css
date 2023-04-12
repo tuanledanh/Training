@@ -1,0 +1,111 @@
+.button{
+    margin-top: 4px;
+    border-radius: 4px;
+    font-family: Roboto Medium;
+    cursor: pointer;
+    /*font-size: 14px; is already defined in main.css*/
+}
+/* Button primary */
+.button--primary{
+    display: block;
+    width: 80px;
+    height: 36px;
+    background-color: #50B83C;
+    color: #FFFFFF;
+    border: none;
+    padding: 0 16px;
+}
+.button--primary:hover{
+    background-color: #5DC748;
+}
+.button--primary:active{
+    background-color: #118044;
+}
+
+/* Button secondary */
+.button--secondary{
+    display: block;
+    min-width: 80px;
+    height: 36px;
+    background-color: #FFFFFF;
+    color: #1F1F1F;
+    border: 1px solid #E6E6E6;
+    padding: 0 16px;
+}
+.button--secondary:hover{
+    background-color: #F6F6F6;
+}
+.button--secondary:active{
+    background-color: #EBEBEB;
+}
+
+/* Button with icon */
+.button--icon{
+    display: flex;
+    width: 93px;
+    min-width: 80px;
+    height: 36px;
+    background-color: #50B83C;
+    border: none;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 0 0px;
+}
+.button__icon{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 4px;
+}
+.button__icon i{
+    font-size: 16px;
+    padding: 2px 2px;
+}
+.button__text{
+    margin-right: 16px;
+}
+.button--icon:hover{
+    background-color: #5DC748;
+}
+.button--icon:active{
+    background-color: #118044;
+}
+
+/* Button with icon and combo */
+.button--combo{
+    display: flex;
+    cursor: default;
+}
+.button__option{
+    display: block;
+}
+.button__option i{
+    display: flex;
+    width: 40px;
+    height: 36px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: #50B83C;
+    margin-left: 2px;
+    margin-top: 4px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.button__option i:hover{
+    background-color: #5DC748;
+}
+.button__option i:active{
+    background-color: #118044;
+}
+.button--combo .options-list{
+    list-style-type: none;
+    padding: 0 2px;
+    margin: 0 0;
+    cursor: pointer;
+}
+.button--combo .options-list li:hover{
+    background-color: #5DC748;
+}

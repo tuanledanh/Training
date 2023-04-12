@@ -1,0 +1,12 @@
+.icon--first-page{
+    background-image: url(../../assets/icon/btn-firstpage.svg);
+}
+.icon--prev-page{
+    background-image: url(../../assets/icon/btn-prev-page.svg);
+}
+.icon--next-page{
+    background-image: url(../../assets/icon/btn-next-page.svg);
+}
+.icon--last-page{
+    background-image: url(../../assets/icon/btn-lastpage.svg);
+}

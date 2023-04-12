@@ -1,0 +1,44 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4px;
+  margin-top: 4px;
+}
+.form-group__label{
+    margin-bottom: 8px;
+}
+.form-group__input-container{
+    display: flex;
+    align-items: center;
+}
+.form-group__input{
+    box-sizing: border-box; 
+    /*bình thường, độ rộng sẽ bằng độ rộng text + padding + border size, 
+    thuộc tính này giúp tính tổng size của text = text + padding + border size luôn*/
+    width: 260px;
+    height: 36px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    padding-left: 12px;
+}
+.form-group__input::placeholder{
+    font-family: Roboto Regular;
+    color: #9E9E9E;
+    font-weight: 400;
+}
+.form-group__input:hover{
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+.form-group__input:focus{
+    outline: none;
+    border: 1px solid #50b83c;
+}
+.form-group__icon{
+    transform: translateX(-150%);
+    cursor: pointer;
+}
+.form-group__icon i{
+    font-size: 16px;
+    color: #666666;
+}

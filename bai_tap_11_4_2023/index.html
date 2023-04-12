@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>MISA - Quản Lý AMIS Kế Toán</title>
+</head>
+<body>
+    <div class="row">
+        <label for="">1.Button</label>
+        <div class="row__content">
+            <button class="button button--primary">
+            Button
+            </button>
+            <button class="button button--secondary">
+                Button
+            </button>
+            <button class="button button--icon">
+                <span class="button__icon">
+                    <i class="fas fa-plus"></i>
+                </span>
+                <span class="button__text">
+                    Button
+                </span>
+            </button>
+            <div class="button button--combo">
+                <button class="button button--icon">
+                    <span class="button__icon">
+                        <i class="fas fa-plus"></i>
+                    </span>
+                    <span class="button__text">
+                        Button
+                    </span>
+                </button>
+                <span class="button__option">
+                    <i class="fas fa-chevron-down"></i>
+                    <ul class="options-list">
+                        <li>Option 1</li>
+                        <li>Option 2</li>
+                        <li>Option 3</li>
+                    </ul>
+                </span>                  
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <label for="">2.Input</label>
+        <div class="form-group">
+            <label class="form-group__label" for="input">Label</label>
+            <div class="form-group__input-container">
+                <input type="text" class="form-group__input" placeholder="Placeholder">
+                <span class="form-group__icon">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <label for="">3.DropdownList</label>
+        <div class="dropdown">
+            <label class="dropdown__label" for="selectOption">Field label</label>
+            <select name="selectOption" id="selectOption" class="dropdown__option" onfocus="this.size=5;" onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+                <option value="" selected disabled hidden>Chọn thành phố</option>
+                <option value="option 1">option 1</option>
+                <option value="option 2">option 2</option>
+                <option value="option 3">option 3</option>
+                <option value="option 4">option 4</option>
+                <option value="option 5">option 5</option>
+                <option value="option 6">option 6</option>
+                <option value="option 7">option 7</option>
+                <option value="option 8">option 8</option>
+                <option value="option 9">option 9</option>
+                <option value="option 10">option 10</option>
+                <option value="option 11">option 11</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <label for="">4.Table</label>
+        <div class="row__content">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="table__cell-header table__cell--move-left" style="width: 50px;">#</th>
+                        <th class="table__cell-header table__cell--move-left" style="width: 150px;">Mã nhân viên</th>
+                        <th class="table__cell-header table__cell--move-left" style="min-width: 200px;">Họ và tên</th>
+                        <th class="table__cell-header table__cell--move-left" style="width: 150px;">Giới tính</th>
+                        <th class="table__cell-header table__cell--move-left" style="width: 150px;">Ngày sinh</th>
+                        <th class="table__cell-header table__cell--move-left" style="width: 150px;">Mức lương cơ bản</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table__cell-data table__cell--move-left">
+                            <input type="checkbox" checked>
+                        </td>
+                        <td class="table__cell-data table__cell--move-left">MV00000</td>
+                        <td class="table__cell-data table__cell--move-left">Kai Nakamura</td>
+                        <td class="table__cell-data table__cell--move-left">Nam</td>
+                        <td class="table__cell-data table__cell--move-left">01/01/1010</td>
+                        <td class="table__cell-data table__cell--move-left">1000$</td>
+                    </tr>
+                    <tr>
+                        <td class="table__cell-data table__cell--move-left">
+                            <input type="checkbox" checked>
+                        </td>
+                        <td class="table__cell-data table__cell--move-left">MV00000</td>
+                        <td class="table__cell-data table__cell--move-left">Kai Nakamura</td>
+                        <td class="table__cell-data table__cell--move-left">Nam</td>
+                        <td class="table__cell-data table__cell--move-left">01/01/1010</td>
+                        <td class="table__cell-data table__cell--move-left">1000$</td>
+                    </tr>
+                    <tr class="table__row--selected">
+                        <td class="table__cell-data table__cell--move-left">
+                            <input type="checkbox" checked>
+                        </td>
+                        <td class="table__cell-data table__cell--move-left">MV00000</td>
+                        <td class="table__cell-data table__cell--move-left">Kai Nakamura</td>
+                        <td class="table__cell-data table__cell--move-left">Nam</td>
+                        <td class="table__cell-data table__cell--move-left">01/01/1010</td>
+                        <td class="table__cell-data table__cell--move-left">1000$</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="paging">
+                <!-- block: paging -->
+                <div class="paging__left">
+                    Hiển thị 01-100/200 nhân viên
+                </div>
+                <div class="paging__center">
+                    <!-- element: button -->
+                    <button class="paging__button paging__button--first icon--first-page"></button>
+                    <button class="paging__button paging__button--prev icon--prev-page"></button>
+                    <!-- block: page-number-group -->
+                    <div class="paging__page-number-group">
+                        <!-- element: button -->
+                        <button class="paging__page-number paging__page-number--selected">1</button>
+                        <button class="paging__page-number">2</button>
+                        <button class="paging__page-number">3</button>
+                        <button class="paging__page-number">4</button>
+                    </div>
+                    <!-- element: button -->
+                    <button class="paging__button paging__button--next icon--next-page"></button>
+                    <button class="paging__button paging__button--last icon--last-page"></button>
+                </div>
+                <div class="paging__right">
+                    <!-- element: select -->
+                    <select class="paging__select" name="" id="">
+                        <option value="10">10 nhân viên/trang</option>
+                        <option value="20">20 nhân viên/trang</option>
+                        <option value="50">50 nhân viên/trang</option>
+                    </select>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="row">
+        <label for="">5.Context menu, Right click to turn it on</label>
+        <div class="row__content">
+            <ul class="menu">
+                <li class="menu__item">
+                    <span class="menu__item-icon">
+                        <i class="fas fa-history"></i>
+                    </span>
+                    <span class="menu__item-text">
+                        History
+                    </span>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__item-icon">
+                        <i class="fas fa-download"></i>
+                    </span>
+                    <span class="menu__item-text">
+                        Downloads
+                    </span>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__item-icon">
+                        <i class="far fa-bookmark"></i>
+                    </span>
+                    <span class="menu__item-text">
+                        Bookmarks
+                    </span>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__item-icon">
+                        <i class="fas fa-indent"></i>
+                    </span>
+                    <span class="menu__item-text">
+                        Recent tabs
+                    </span>
+                </li>
+                <hr class="menu__hr">
+                <li class="menu__item">
+                    <span class="menu__item-icon">
+                        <i class="fas fa-share"></i>
+                    </span>
+                    <span class="menu__item-text">
+                        Share
+                    </span>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__item-icon">
+                        <i class="fas fa-cog"></i>
+                    </span>
+                    <span class="menu__item-text">
+                        Settings
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const selectOption = document.querySelector(".button__option .options-list");
+        const options = selectOption.querySelectorAll("li");
+        const buttonText = document.querySelector(".button--combo .button--icon .button__text");
+        for (let i = 0; i < options.length; i++) {
+            options[i].addEventListener("click", function() {
+                buttonText.textContent = options[i].textContent;
+                selectOption.style.display = "none";
+            });
+        }
+        selectOption.style.display = "none";
+        document.querySelector(".button__option i").addEventListener("click", function(){
+            if(selectOption.style.display == "none"){
+                selectOption.style.display = "block";
+            }else{
+                selectOption.style.display = "none";
+            }
+        });
+    </script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
