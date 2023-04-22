@@ -1,0 +1,17 @@
+.input__holder{
+    width: 100%;
+    border: none;
+    background-color: #F1F2F3;
+    padding: unset;
+    cursor: pointer;
+}
+.input__holder:hover{
+    background-color: #e6e6e6;
+}
+.input__holder:focus{
+    outline: none;
+}
+.input__icon{
+    margin-left: 12px;
+    margin-right: 8px;
+}

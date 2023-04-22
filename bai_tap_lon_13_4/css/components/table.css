@@ -1,0 +1,37 @@
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: unset;
+    border: unset;
+}
+
+.table tr{
+    border-bottom: 1px solid #BBBBBB;
+    height: 40px;
+}
+
+.table tr td,th{
+    padding-left: 16px;
+    padding-right: 10px;
+}
+
+.table__cell--move-left{
+    text-align: left;
+}
+
+.table__cell--move-right{
+    text-align: right;
+}
+
+.table__cell--move-center{
+    text-align: center;
+}
+
+.table tbody tr:hover{
+    background-color: #E9EBEE;
+    cursor: pointer;
+}
+
+.table tbody tr.table__row--selected{
+    background-color: #E3F3EE;
+}

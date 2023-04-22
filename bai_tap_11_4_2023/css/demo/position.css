@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+.header{
+    position: relative; /*di chuyển dựa theo vị trí ban đầu của nó*/
+    top: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: antiquewhite;
+}
+.nav{
+    position: relative;
+    left: 10px;
+    width: 200px;
+    height: calc(100vh - 50px);
+    background-color: aqua;
+}
+.main{    
+    position: absolute;
+    top: 50px;
+    left: 210px;
+    width: calc(100% - 200px);
+    height: calc(100vh - 50px);
+    background-color: aquamarine;
+}
+.child{
+    position: absolute; 
+    /*căn theo thằng cha gần nhất có position, 
+    nếu thk main k có position thì nó căn theo ông nó, là body*/
+    /*ngoài ra còn có position: fix; nó luôn có định trên màn, kể cả khi scroll, 
+    có thể chỉnh bằng top left các thứ như position khác*/
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+.nav_item{
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 10px;
+    background-color: brown;
+}

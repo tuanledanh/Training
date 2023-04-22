@@ -1,0 +1,121 @@
+.popup{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #bdbdbd5d;
+    display: flex;
+    flex-direction: column;
+    z-index: 2; /*set the z-index to avoid popup being covered by the header of the table*/
+}
+.popup-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+    width: 328px;
+    height: 499px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(23,27,42,0.24);
+    display: flex;
+    flex-direction: column;
+}
+
+/*================================header================================*/
+.popup__header{
+    padding: 22px 24px 23px 24px;
+    display: flex;
+    height: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__text{
+    font-family: Roboto Bold;
+    font-weight: 700;
+    font-size: 24px;
+}
+.header__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.header__icon:hover{
+    background-color: #F6F6F6;
+}
+.header__icon:active{
+    background-color: #E6E6E6;
+}
+
+
+/*================================body================================*/
+.popup__body{
+    padding: 0 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    height: 362px;
+    box-sizing: border-box;
+}
+.body__label{
+    height: 37px;
+    font-family: Roboto Regular;
+    color: #1F1F1F;
+    font-weight: 400;
+    align-items: left;
+    padding-bottom: 14px;
+}
+.body__input-control{
+    margin-bottom: 14px;
+}
+.input-control__label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.input-control__input{
+    display: flex;
+    height: 36px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.input-control__input:focus-within{
+    border: 1px solid #50B83C; 
+    /*focus-within dùng để chọn phần tử cha của phần từ input
+    khi input đó được focus*/
+}
+.input-control__input .input__holder{
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    padding-left: 16px;
+}
+.input-control__input .input__holder::placeholder{
+    font-family: Roboto Regular;
+}
+.input-control__input .input__holder:hover{
+    background-color: #e6e6e6;
+}
+/*================================footer================================*/
+.popup__footer{
+    display: flex;
+    height: 60px;
+    background-color: #F5F5F5;
+    align-items: center;
+    justify-content: end;
+    box-sizing: border-box;
+}
+.footer__button{
+    display: flex;
+    margin-right: 26px;
+}
+.footer__button button{
+    margin: unset;
+    margin-left: 8px;
+    width: 90px;
+}

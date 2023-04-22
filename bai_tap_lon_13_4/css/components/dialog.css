@@ -1,0 +1,50 @@
+.dialog{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #bdbdbd5d;
+    display: flex;
+    flex-direction: column;
+    z-index: 3; /*set the z-index to avoid dialog being covered by popup*/
+}
+.dialog-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    background-color: #FFFFFF;
+}
+.dialog__header{
+    display: flex;
+    margin: 22px 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__text{
+    font-family: Roboto Bold;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1F1F1F;
+}
+.dialog__content{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin: 0 24px;
+}
+.dialog__content li{
+    font-family: Roboto Regular;
+    margin-bottom: 8px;
+}
+.dialog__footer{
+    display: flex;
+    margin: 22px 24px;
+    justify-content: end;
+}

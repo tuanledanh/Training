@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+.header{
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: antiquewhite;
+}
+.nav{
+    float: left;
+    width: 200px;
+    height: calc(100vh - 50px);
+    background-color: aqua;
+}
+.main{
+    float: left;
+    width: calc(100% - 200px);
+    height: calc(100vh - 50px);
+    background-color: aquamarine;
+}

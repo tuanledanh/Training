@@ -1,0 +1,58 @@
+.paging{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.paging__center{
+    display: flex;
+    text-align: center;
+}
+
+.paging__button{
+    border: unset;
+    background-color: unset;
+}
+
+.paging__page-number-group{
+    display: flex;
+}
+
+.paging button{
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    background-repeat: no-repeat;
+}
+
+button.paging__page-number{
+    border-radius: 50%;
+    border: 1px solid #BBBBBB;
+    margin: 13px 8px;
+}
+
+button.paging__page-number:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+button.paging__page-number--selected{
+    background-color: #019160;
+    color: #fff;
+}
+
+.paging__left{
+    position: absolute;
+    left: 0px;
+}
+
+.paging__right{
+    position: absolute;
+    right: 0px;
+}

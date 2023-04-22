@@ -1,0 +1,30 @@
+.nav{
+    background-color: antiquewhite;
+}
+.slide{
+    background-color: aqua;
+}
+.mid{
+    background-color: aquamarine;
+}
+.content{
+    background-color: yellowgreen;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px calc(100% - 200px);
+    grid-template-rows: 56px 70px calc(100vh - 126px);
+}
+.nav{
+    grid-column: 1/3;
+}
+.slide{
+    grid-row: 2/4;
+}
+.mid{
+    grid-row: 2/3;
+}
+.content{
+    grid-row: 3/4;
+}

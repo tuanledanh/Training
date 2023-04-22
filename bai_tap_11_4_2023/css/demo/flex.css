@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: rgb(0, 0, 229);
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(249, 244, 239);
+}
+.nav{
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: calc(100vh - 50px);
+    background-color: aqua;
+}
+.main{
+    height: calc(100vh - 50px); /* flex: 1;tự tính toán phần còn lại cua height, width*/
+    width: calc(100% - 200px);
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 10px;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(205, 205, 205);
+}
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(17, 17, 17, 0.227);
+    /* opacity: .4; không nên dùng
+     vì nó ảnh hưởng đến toàn bộ đời con cháu*/
+}
+.popup-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    /*nếu dùng nguyên top left thì thứ được đưa về
+    trung tâm là góc trên bên trái của khối,
+    chú không phải là tâm của khối, nên
+    phải dùng tranform bên dưới để di chuyển tâm*/
+    transform: translate(-50%, -50%);
+    background-color: rgb(231, 23, 23);
+    width: 100px;
+    height: 100px;
+}

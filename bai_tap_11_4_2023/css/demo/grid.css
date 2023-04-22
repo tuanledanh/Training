@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-rows: 50px calc(100vh - 50px);
+    grid-template-columns: 200px calc(100% - 200px);
+}
+.header{
+    background-color: antiquewhite;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.nav{
+    background-color: aqua;
+}
+.main{
+    background-color: aquamarine;
+}

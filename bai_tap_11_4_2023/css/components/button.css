@@ -42,7 +42,6 @@
 /* Button with icon */
 .button--icon{
     display: flex;
-    width: 93px;
     min-width: 80px;
     height: 36px;
     background-color: #50B83C;

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Quản lý nhân viên</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container__nav nav">
+      <div class="nav--left">
+        <div class="nav__icon-menu icon">
+          <div class="icon--menu"></div>
+        </div>
+        <div class="nav__icon-logo icon">
+          <div class="icon--logo"></div>
+        </div>
+        <div class="nav__label label">KẾ TOÁN</div>
+      </div>
+      <div class="nav--center">
+        <div class="nav__input input">
+          <div class="input__icon icon--search"></div>
+          <input class="input__holder" type="text" placeholder="Tìm theo mã nhân viên, họ tên, SĐT, Email...">
+        </div>
+      </div>
+      <div class="nav--right">
+        <div class="nav__icon-cloud icon icon--cloud"></div>
+        <div class="nav__icon-notification icon icon--notification"></div>
+        <div class="nav__icon-question icon icon--question"></div>
+        <div class="nav__icon-user icon icon--user"></div>
+      </div>
+    </div>
+    <div class="container__slide-bar slide-bar">
+      <div class="slide-bar">
+        <div class="slide-bar__item slide-bar__item--active">
+          <div class="slide-bar__icon">
+            <div class="icon--overview"></div>
+          </div>
+          <div class="slide-bar__item-name">Tổng quan</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--cash"></div>
+          </div>
+          <div class="slide-bar__item-name">Tiền mặt</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--deposits"></div>
+          </div>
+          <div class="slide-bar__item-name">Tiền gửi</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--purchase"></div>
+          </div>
+          <div class="slide-bar__item-name">Mua hàng</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--sell"></div>
+          </div>
+          <div class="slide-bar__item-name">Bán hàng</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--invoiceManagement"></div>
+          </div>
+          <div class="slide-bar__item-name">Quản lý hóa đơn</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--warehouse"></div>
+          </div>
+          <div class="slide-bar__item-name">Kho</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--tools"></div>
+          </div>
+          <div class="slide-bar__item-name">Công cụ dụng cụ</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--fixedAssets"></div>
+          </div>
+          <div class="slide-bar__item-name">Tài sản cố định</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--tax"></div>
+          </div>
+          <div class="slide-bar__item-name">Thuế</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--price"></div>
+          </div>
+          <div class="slide-bar__item-name">Giá thành</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--synthetic"></div>
+          </div>
+          <div class="slide-bar__item-name">Tổng hợp</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--budget"></div>
+          </div>
+          <div class="slide-bar__item-name">Ngân sách</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--report"></div>
+          </div>
+          <div class="slide-bar__item-name">Báo cáo</div>
+        </div>
+        <div class="slide-bar__item">
+          <div class="slide-bar__icon">
+            <div class="icon--financialAnalysis"></div>
+          </div>
+          <div class="slide-bar__item-name">Phân tích tài chính</div>
+        </div>
+      </div>
+    </div>
+    <div class="container__popup">
+      <div class="popup__button">
+        <button id="btnAdd" class="button button--primary button__view" style="width: 250px;">Click to view popup</button>
+      </div>
+      <div class="popup">
+        <div class="popup-wrapper">
+          <div class="popup__header">
+            <div class="header__text">Đăng ký tài khoản</div>
+            <div class="header__icon">
+              <div class="icon-exit">
+                <div class="icon--exit"></div>
+              </div>
+            </div>
+          </div>
+          <div class="popup__body">
+            <div class="body__label">Vui lòng điền các thông tin dưới đây để hoàn thành</div>
+            <div class="body__input-control">
+              <div class="input-control__label">
+                <div class="label__text">Họ và tên</div>
+                <div class="label__icon">
+                  <div class="icon-note">
+                    <div class="icon--note"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="input-control__input">
+                <input id="hvt" class="input__holder" type="text" required placeholder="Họ và tên đầy đủ">
+              </div>
+            </div>
+            <div class="body__input-control">
+              <div class="input-control__label">
+                <div class="label__text">Giới tính</div>
+              </div>
+              <div class="input-control__radio">
+                <div class="radio__holder">
+                  <input class="radio__input" type="radio" name="gender" value="male" id="male" checked>
+                  <label class="radio__label" for="male">Nam</label>
+                </div>
+                <div class="radio__holder">
+                  <input class="radio__input" type="radio" name="gender" value="female" id="female">
+                  <label class="radio__label" for="female">Nữ</label>
+                </div>
+              </div>
+            </div>
+            <div class="body__input-control">
+              <div class="input-control__label">
+                <div class="label__text">Ngày sinh</div>
+                <div class="label__icon">
+                  <div class="icon-note">
+                    <div class="icon--note"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="input-control__input">
+                <input class="input__holder" type="date">
+              </div>
+            </div>
+            <div class="body__input-control">
+              <div class="input-control__label">
+                <div class="label__text">Địa chỉ email</div>
+              </div>
+              <div class="input-control__input">
+                <input class="input__holder" type="email" placeholder="example@email.com">
+              </div>
+            </div>
+          </div>
+          <div class="popup__footer">
+            <div class="footer__button">
+              <button class="button button--secondary">Hủy</button>
+              <button class="button button--primary">Đăng ký</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container__content content">
+      <div class="content__header">contentheader</div>
+      <div class="content__table table">
+        <div class="table__head head">
+          <div class="head__checkbox">
+            <input type="checkbox" name="myCheckbox" value="1">
+          </div>
+          <div class="head__text">Header A</div>
+        </div>
+        <div class="table__head head">
+          <div class="head__text">Header B</div>
+          <div class="head__icon">
+            <div class="icon head__icon--sort">
+              <div class="icon--sort"></div>
+            </div>
+            <div class="icon head__icon--filter">
+              <div class="icon--filter"></div>
+            </div>
+          </div>
+        </div>
+        <div class="table__head head">
+          <div class="head__text">Header C</div>
+        </div>
+        <div class="table__head head">
+          <div class="head__text">Header D</div>
+        </div>
+        <div class="table__body">
+          <div class="table__data data">
+            <div class="data__checkbox">
+              <input type="checkbox" name="myCheckbox" value="1">
+            </div>
+            <div class="data__text">Cell A1</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell B1</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell C1</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Sửa</div>
+          </div>
+        </div>
+        <div class="table__body">
+          <div class="table__data data">
+            <div class="data__checkbox">
+              <input type="checkbox" name="myCheckbox" value="1">
+            </div>
+            <div class="data__text">Cell A2</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell B2</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell C2</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Sửa</div>
+          </div>
+        </div>
+        <div class="table__body">
+          <div class="table__data data">
+            <div class="data__checkbox">
+              <input type="checkbox" name="myCheckbox" value="1">
+            </div>
+            <div class="data__text">Cell A3</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell B3</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell C3</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Sửa</div>
+          </div>
+        </div>
+        <div class="table__body">
+          <div class="table__data data">
+            <div class="data__checkbox">
+              <input type="checkbox" name="myCheckbox" value="1">
+            </div>
+            <div class="data__text">Cell A4</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell B4</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell C4</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Sửa</div>
+          </div>
+        </div>
+        <div class="table__body">
+          <div class="table__data data">
+            <div class="data__checkbox">
+              <input type="checkbox" name="myCheckbox" value="1">
+            </div>
+            <div class="data__text">Cell A5</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell B5</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell C5</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Sửa</div>
+          </div>
+        </div>
+        <div class="table__body">
+          <div class="table__data data">
+            <div class="data__checkbox">
+              <input type="checkbox" name="myCheckbox" value="1">
+            </div>
+            <div class="data__text">Cell A6</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell B6</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell C6</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Sửa</div>
+          </div>
+        </div>
+        <div class="table__body">
+          <div class="table__data data">
+            <div class="data__checkbox">
+              <input type="checkbox" name="myCheckbox" value="1">
+            </div>
+            <div class="data__text">Cell A7</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell B7</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell C7</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Sửa</div>
+          </div>
+        </div>
+        <div class="table__body">
+          <div class="table__data data">
+            <div class="data__checkbox">
+              <input type="checkbox" name="myCheckbox" value="1">
+            </div>
+            <div class="data__text">Cell A8</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell B8</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell C8</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Sửa</div>
+          </div>
+        </div>
+        <div class="table__body">
+          <div class="table__data data">
+            <div class="data__checkbox">
+              <input type="checkbox" name="myCheckbox" value="1">
+            </div>
+            <div class="data__text">Cell A9</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell B9</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Cell C9</div>
+          </div>
+          <div class="table__data data">
+            <div class="data__text">Sửa</div>
+          </div>
+        </div>
+      </div>
+      <div class="content__page page">
+        <div class="page__total-record">
+          <label for="" class="total-record__text">Total: 15 records</label>
+        </div>
+        <div class="page__option">
+          <div class="option__record-per-page">
+            <label class="record-per-page__label--left" for="">Record/page</label>
+            <select class="record-per-page__select" name="" id="">
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+            </select>
+            <label class="record-per-page__label--right" for="">1 - 15 records</label>
+          </div>
+          <div class="option__paging">
+            <div class="paging__icon">
+              <div class="icon--prev">
+                <div class="icon--prev-page"></div>
+              </div>
+              <div class="icon--next">
+                <div class="icon--next-page"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/pages/employee.js">
+
+  </script>
+</body>
+
+</html>

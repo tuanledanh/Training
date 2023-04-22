@@ -1,0 +1,15 @@
+.input-control__radio{
+    display: flex;
+}
+.radio__holder{
+    font-family: Roboto Regular;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.radio__input{
+    cursor: pointer;
+}
+.radio__label{
+    cursor: pointer;
+}

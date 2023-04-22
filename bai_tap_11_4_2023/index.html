@@ -212,6 +212,42 @@
             </ul>
         </div>
     </div>
+    <div class="row">
+        <label for="">6.Toast messenger</label>
+        <div class="toast">
+            <div class="toast__button">
+                <button class="button button--icon" id="btnShowToast">
+                    <span class="button__icon icon icon--add">
+                    </span>
+                    <span class="button__text">
+                        Hiển thị hồ sơ toast manager
+                    </span>
+                </button>
+            </div>
+            <div class="toast__box">
+                <div class="toast__item toast__item--error">
+                    <div class="toast__item-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <div class="toast__item-text">Nội dung đi kèm tiêu đề</div>
+                    <div class="toast__item-close"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="toast__item toast__item--warning">
+                    <div class="toast__item-icon"><i class="fas fa-exclamation-circle"></i></div>
+                    <div class="toast__item-text">Nội dung đi kèm tiêu đề</div>
+                    <div class="toast__item-close"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="toast__item toast__item--success">
+                    <div class="toast__item-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="toast__item-text">Nội dung đi kèm tiêu đề</div>
+                    <div class="toast__item-close"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="toast__item toast__item--info">
+                    <div class="toast__item-icon"><i class="fas fa-info-circle"></i></div>
+                    <div class="toast__item-text">Nội dung đi kèm tiêu đề</div>
+                    <div class="toast__item-close"><i class="fas fa-times"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         const selectOption = document.querySelector(".button__option .options-list");
         const options = selectOption.querySelectorAll("li");
@@ -229,6 +265,15 @@
             }else{
                 selectOption.style.display = "none";
             }
+        });
+
+        //toast
+        document.getElementById("btnShowToast").addEventListener("click", function(){
+            var toastBox = document.getElementsByClassName("toast__box");
+            toastBox[0].style.display = "block";
+            setTimeout(() =>{
+                toastBox[0].style.display = "none";
+            }, 1500);
         });
     </script>
     <script src="./js/menu.js"></script>

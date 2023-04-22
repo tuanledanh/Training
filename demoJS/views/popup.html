@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>PopUp - thông tin nhân viên</title>
+</head>
+
+<body>
+    <div class="popup__button">
+        <button class="button button--primary button__view" style="width: 250px;">Click to view popup</button>
+    </div>
+    <div class="popup">
+        <div class="popup-wrapper">
+            <div class="popup__header">
+                <div class="header__text">Đăng ký tài khoản</div>
+                <div class="header__icon">
+                    <div class="icon-exit">
+                        <div class="icon--exit"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__body">
+                <div class="body__label">Vui lòng điền các thông tin dưới đây để hoàn thành</div>
+                <div class="body__input-control">
+                    <div class="input-control__label">
+                        <div class="label__text">Họ và tên</div>
+                        <div class="label__icon">
+                            <div class="icon-note">
+                                <div class="icon--note"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text" placeholder="Họ và tên đầy đủ">
+                    </div>
+                </div>
+                <div class="body__input-control">
+                    <div class="input-control__label">
+                        <div class="label__text">Giới tính</div>
+                    </div>
+                    <div class="input-control__radio">
+                        <div class="radio__holder">
+                            <input class="radio__input" type="radio" name="gender" value="male" id="male" checked>
+                            <label class="radio__label" for="male">Nam</label>
+                        </div>
+                        <div class="radio__holder">
+                            <input class="radio__input" type="radio" name="gender" value="female" id="female">
+                            <label class="radio__label" for="female">Nữ</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="body__input-control">
+                    <div class="input-control__label">
+                        <div class="label__text">Ngày sinh</div>
+                        <div class="label__icon">
+                            <div class="icon-note">
+                                <div class="icon--note"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="date">
+                    </div>
+                </div>
+                <div class="body__input-control">
+                    <div class="input-control__label">
+                        <div class="label__text">Địa chỉ email</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="email" placeholder="example@email.com">
+                    </div>
+                </div>
+            </div>
+            <div class="popup__footer">
+                <div class="footer__button">
+                    <button class="button button--secondary">Hủy</button>
+                    <button class="button button--primary">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //display popup
+        const buttonView = document.querySelector('.popup__button .button__view');
+        const popup = document.querySelector('.popup');
+        const iconExit = document.querySelector('.icon-exit');
+        buttonView.onclick = function(){
+            buttonView.style.visibility = "hidden";
+            popup.style.visibility = "visible";
+        }
+        iconExit.onclick = function(){
+            buttonView.style.visibility = "visible";
+            popup.style.visibility = "hidden";
+        }
+
+        // radio button
+        const radioHolders = document.querySelectorAll('.radio__holder');
+        radioHolders.forEach(function (radioHolder) {
+            radioHolder.onclick = function () {
+                const radioInput = radioHolder.querySelector('.radio__input');
+                /* 
+                we can replace all the code blow with: radioInput.checked = true;
+                and it still work
+                in the following code: we obtain group name to uncheck all the other 
+                radio buttons that have the same group name, and we only need to checked
+                the radio button that we want.
+                the difference is that we can change the group name and interact with the group name we want
+                */
+                const groupName = radioInput.name;
+                const otherRadioInputs = document.querySelectorAll('input[name="' + groupName + '"]');
+                if (otherRadioInputs != radioInput) {
+                    otherRadioInputs.checked = false;
+                    radioInput.checked = true;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

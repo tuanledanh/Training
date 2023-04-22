@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="popup__button">
+        <button class="button button--primary button__view" style="width: 250px;">Click to view popup</button>
+    </div>
+    <div class="popup">
+        <div class="popup-wrapper">
+            <div class="popup__header">
+                <div class="header-left">
+                    <div class="header-left__text">Thông tin nhân viên</div>
+                    <div class="header-left__checkbox">
+                        <div class="checkbox__input">
+                            <input type="checkbox" value="1">
+                            <div class="checkbox__text">Là khách hàng</div>
+                        </div>
+                        <div class="checkbox__input">
+                            <input type="checkbox" value="1">
+                            <div class="checkbox__text">Là nhà cung cấp</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-right__icon">
+                        <div class="icon-info">
+                            <div class="icon--info"></div>
+                        </div>
+                        <div class="icon-exit">
+                            <div class="icon--exit"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__body">
+                <div class="body__input-control" style="width: 175px; margin-right: 4px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Mã</div>
+                        <div class="label__icon">
+                            <div class="icon-note">
+                                <div class="icon--note"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text">
+                    </div>
+                    <div class="input-control__notice">cannot empty</div>
+                </div>
+                <div class="body__input-control" style="width: 265px; margin-right: 30px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Tên</div>
+                        <div class="label__icon">
+                            <div class="icon-note">
+                                <div class="icon--note"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text">
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 185px; margin-right: 16px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Ngày sinh</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="date">
+                    </div>
+                </div>
+                <div class="body__input-control">
+                    <div class="input-control__label">
+                        <div class="label__text">Giới tính</div>
+                    </div>
+                    <div class="input-control__radio">
+                        <div class="radio__holder">
+                            <input class="radio__input" type="radio" name="gender" value="male" id="male" checked>
+                            <label class="radio__label" for="male">Nam</label>
+                        </div>
+                        <div class="radio__holder">
+                            <input class="radio__input" type="radio" name="gender" value="female" id="female">
+                            <label class="radio__label" for="female">Nữ</label>
+                        </div>
+                        <div class="radio__holder">
+                            <input class="radio__input" type="radio" name="gender" value="other" id="other">
+                            <label class="radio__label" for="other">Khác</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 445px; margin-right: 30px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Đơn vị</div>
+                        <div class="label__icon">
+                            <div class="icon-note">
+                                <div class="icon--note"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-control__input">
+                        <select class="dropdown__option" name="" id="" style="width: 100%;">
+                            <option value="opt1">option 1</option>
+                            <option value="opt2">option 2</option>
+                            <option value="opt3">option 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 265px; margin-right: 4px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Số CMND</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text">
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 190px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Ngày cấp</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="date">
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 445px; margin-right: 30px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Chức danh</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text">
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 460px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Nơi cấp</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text">
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 935px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Địa chỉ</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text">
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 215px; margin-right: 4px;">
+                    <div class="input-control__label">
+                        <div class="label__text">ĐT di động</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text">
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 230px; margin-right: 4px;">
+                    <div class="input-control__label">
+                        <div class="label__text">ĐT cố định</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text">
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 235px; margin-right: 60px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Email</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text">
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 215px; margin-right: 4px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Tài khoản ngân hàng</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text">
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 230px; margin-right: 4px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Tên ngân hàng</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text">
+                    </div>
+                </div>
+                <div class="body__input-control" style="width: 235px;">
+                    <div class="input-control__label">
+                        <div class="label__text">Chi nhánh</div>
+                    </div>
+                    <div class="input-control__input">
+                        <input class="input__holder" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="popup__footer"></div>
+        </div>
+    </div>
+    <script src="/js/popup.js"></script>
+    <script src="/js/radioButton.js"></script>
+</body>
+</html>

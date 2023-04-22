@@ -10,3 +10,8 @@
 .icon--last-page{
     background-image: url(../../assets/icon/btn-lastpage.svg);
 }
+.icon--add{
+    background-image: url(../../assets/icon/add.png);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+}
