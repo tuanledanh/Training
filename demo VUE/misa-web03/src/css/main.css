@@ -1,0 +1,66 @@
+@import url(./components/button.css);
+@import url(./components/combobox.css);
+@import url(./components/dialog.css);
+@import url(./components/dropdown.css);
+@import url(./components/icon.css);
+@import url(./components/input.css);
+@import url(./components/label.css);
+@import url(./components/menu.css);
+@import url(./components/paging.css);
+@import url(./components/popup.css);
+@import url(./components/radio.css);
+@import url(./components/table.css);
+@import url(./components/toast.css);
+
+@import url(./layout/content.css);
+@import url(./layout/header.css);
+@import url(./layout/nav.css);
+@import url(./layout/slide-bar.css);
+
+@import url(../assets/fonts/fontawesome-5.15.1/css/all.min.css);
+
+*{
+    font-size: 14px;
+}
+@font-face {
+    font-family: Roboto Medium;
+    src: url(../assets/fonts/notosans-semibold.df3e6dc4.woff2);
+}
+@font-face {
+    font-family: Roboto Regular;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+@font-face {
+    font-family: Roboto Bold;
+    src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px calc(100% - 200px);
+    grid-template-rows: 56px 70px 600px calc(100vh - 726px);
+    background-color: rgba(161, 159, 159, 0.251);
+}
+.container__nav{
+    grid-column: 1/3;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.132);
+}
+.container__slide-bar{
+    grid-row: 2/5;
+    background-color: #041434;
+    overflow-y: auto;
+}
+.container__popup{
+    grid-row: 2/3;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+}
+.container__content{
+    grid-row: 3/4;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-color: #FFFFFF;
+}

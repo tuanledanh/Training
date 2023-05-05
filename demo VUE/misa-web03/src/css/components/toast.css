@@ -1,0 +1,93 @@
+.toast{
+    margin-top: 4px;
+}
+.toast__box{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.toast__item{
+    display: flex;
+    padding: 16px 8px 16px 16px;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.toast__item-icon i{
+    font-size: 24px;
+}
+.toast__item-text{
+    margin: 0 8px 0 8px;
+}
+.toast__item-close i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*toast error*/
+.toast__item--error{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.toast__item--error .toast__item-icon{
+    color: rgb(245, 92, 92);
+}
+.toast__item--error .toast__item-text{
+    color: rgb(245, 92, 92);
+}
+.toast__item--error .toast__item-close{
+    color: rgb(245, 92, 92);
+}
+.toast__item--error .toast__item-close:hover{
+    color: rgb(165, 0, 0);
+}
+/*toast warning*/
+.toast__item--warning{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.toast__item--warning .toast__item-icon{
+    color: rgb(239, 180, 84);
+}
+.toast__item--warning .toast__item-text{
+    color: rgb(239, 180, 84);
+}
+.toast__item--warning .toast__item-close{
+    color: rgb(239, 180, 84);
+}
+.toast__item--warning .toast__item-close:hover{
+    color: rgb(255, 157, 0);
+}
+/*toast success*/
+.toast__item--success{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.toast__item--success .toast__item-icon{
+    color: rgb(67, 185, 67);
+}
+.toast__item--success .toast__item-text{
+    color: rgb(67, 185, 67);
+}
+.toast__item--success .toast__item-close{
+    color: rgb(67, 185, 67);
+}
+.toast__item--success .toast__item-close:hover{
+    color: rgb(2, 149, 27);
+}
+/*toast info*/
+.toast__item--info{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.toast__item--info .toast__item-icon{
+    color: rgb(24, 133, 250);
+}
+.toast__item--info .toast__item-text{
+    color: rgb(24, 133, 250);
+}
+.toast__item--info .toast__item-close{
+    color: rgb(24, 133, 250);
+}
+.toast__item--info .toast__item-close:hover{
+    color: rgb(0, 69, 142);
+}

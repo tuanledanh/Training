@@ -1,0 +1,23 @@
+import { createApp } from "vue";
+import App from "./App.vue";
+// import MISAButton from "./components/MISAButton.vue";
+// import MISAInput from "./components/MISAInput.vue";
+import router from "./router/index";
+import axios from "axios";
+import MISALoading from "./components/MISALoading.vue";
+import emitter from "tiny-emitter/instance";
+import MISAEnum from "./js/MISAEnum";
+import MISAResource from "./js/MISAResource";
+
+const app = createApp(App);
+// app.component("MISAButton", MISAButton);
+// app.component("MISAInput", MISAInput);
+app.component("MISALoading", MISALoading);
+app.use(router);
+const globalProps = app.config.globalProperties;
+globalProps.$tuanLDAxios = axios;
+globalProps.$memitter = emitter;
+globalProps.$MISAEnum = MISAEnum;
+globalProps.$MISAResource = MISAResource;
+app.mount("#app");
+export { globalProps };

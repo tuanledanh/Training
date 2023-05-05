@@ -171,3 +171,9 @@
 	background-position: center center;
 	background-size: 16px;
 }
+.icon--warning{
+	background-image: url(../../assets/img/icon/warning.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 60px;
+}

@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 200px;
+    height: 250px;
     background-color: #FFFFFF;
 }
 .dialog__header{
@@ -35,11 +35,21 @@
 }
 .dialog__content{
     display: flex;
-    flex-direction: column;
-    height: 100px;
+    flex-direction: row;
+    min-height: 100px;
     margin: 0 24px;
+    align-items: center;
 }
-.dialog__content li{
+.dialog-content__icon{
+    width: 20%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+.dialog-content__message li{
     font-family: Roboto Regular;
     margin-bottom: 8px;
 }

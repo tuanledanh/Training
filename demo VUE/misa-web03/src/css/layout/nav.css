@@ -1,0 +1,65 @@
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+/*Nav Left*/
+.nav--left{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 200px;
+    box-sizing: border-box;
+    margin-right: 24px;
+}
+.nav__icon-menu{
+    margin: 0px 8px;
+}
+
+.nav__icon-logo{
+    margin: 0 8px;
+}
+
+/*Nav Center*/
+.nav--center {
+    align-items: center;
+}
+.nav__input{
+    display: flex;
+    align-items: center;
+    width: 385px;
+    height: 36px;
+    background-color: #F1F2F3;
+    border-radius: 4px;
+}
+.nav__input:focus-within {
+    border: 1px solid #50B83C; 
+    /*focus-within dùng để chọn phần tử cha của phần từ input
+    khi input đó được focus*/
+}
+.nav__input:hover .input__holder{
+    background-color: #e6e6e6;
+}
+.nav__input:hover{
+    background-color: #e6e6e6;
+}
+/*Nav Right*/
+.nav--right{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex: 1;
+}
+.nav__icon-cloud{
+
+}
+.nav__icon-notification{
+    margin-left: 25px;
+}
+.nav__icon-question{
+    margin-left: 25px;
+}
+.nav__icon-user{
+    margin-left: 22px;
+    margin-right: 24px;
+}

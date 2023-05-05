@@ -1,0 +1,204 @@
+.popup__button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.popup--right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+}
+.popup__label{
+    font-family: Roboto Bold;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F1F20;
+}
+.button__view{
+    display: flex;
+    align-items: center;
+    margin: unset;
+    margin-right: 12px;
+}
+.button__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    margin: 10px 8px 10px 13px;
+}
+.icon-option{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+}
+
+.popup{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #bdbdbd5d;
+    display: flex;
+    flex-direction: column;
+    z-index: 2; /*set the z-index to avoid popup being covered by the header of the table*/
+}
+.popup-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 670px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(23,27,42,0.24);
+    display: flex;
+    flex-direction: column;
+}
+
+/*================================header================================*/
+.popup__header{
+    padding: 22px 24px 23px 24px;
+    display: flex;
+    height: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left__text{
+    font-family: Roboto Bold;
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 8px;
+}
+.header-left__checkbox{
+    display: flex;
+    align-items: center;
+}
+.checkbox__input{
+    display: flex;
+    align-items: center;
+    font-family: Roboto Regular;
+}
+.checkbox__input input{
+    transform: scale(1.4);
+    margin: unset;
+}
+.checkbox__text{
+    margin-left: 8px;
+    margin-right: 24px;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.header-right__icon{
+    display: flex;
+    align-items: center;
+}
+.icon-info{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+}
+.icon-exit{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+.icon-exit:hover{
+    background-color: #e6e6e6;
+}
+.icon--exit{
+    transform: scale(1.5);
+}
+
+/*================================body================================*/
+.popup__body{
+    padding: 0 24px 24px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 553px;
+    box-sizing: border-box;
+}
+.body__input-control{
+    margin-bottom: 14px;
+}
+.input-control__label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.input-control__input{
+    display: flex;
+    height: 36px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.input-control__input:focus-within{
+    border: 1px solid #50B83C; 
+    /*focus-within dùng để chọn phần tử cha của phần từ input
+    khi input đó được focus*/
+}
+.input-control__input .input__holder{
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    padding-left: 16px;
+    font-family: Roboto Regular;
+}
+.input-control__input .input__holder::placeholder{
+    font-family: Roboto Regular;
+}
+.input-control__input .input__holder:hover{
+    background-color: #e6e6e6;
+}
+.input-control__notice{
+    color: #E61D1D;
+    font-family: Roboto Regular;
+}
+.required{
+    border: 1px solid #E61D1D;
+}
+/*================================footer================================*/
+.popup__footer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    padding: 0 24px;
+}
+.footer-right{
+    display: flex;
+    align-items: center;
+}
+.footer-right button{
+    margin: 0 8px;
+}
+.footer-right .button--primary{
+    width: 135px;
+}

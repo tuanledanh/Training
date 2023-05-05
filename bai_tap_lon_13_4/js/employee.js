@@ -80,11 +80,18 @@ function showErrors(errors) {
   );
   // Xóa content cũ
   dialogContent.innerHTML = "";
+  let divIconHtml = document.createElement("div");
+  divIconHtml.classList.add("dialog-content__icon");
+  divIconHtml.classList.add("icon--warning");
+  dialogContent.append(divIconHtml);
+  let divMessHtml = document.createElement("div");
+  divMessHtml.classList.add("dialog-content__message");
   // Thay content mới
   for (const error of errors) {
     // Cú pháp tạo 1 HTML Element
     let liHTML = document.createElement("li");
     liHTML.innerText = error;
-    dialogContent.append(liHTML);
+    divMessHtml.append(liHTML);
+    dialogContent.append(divMessHtml);
   }
 }

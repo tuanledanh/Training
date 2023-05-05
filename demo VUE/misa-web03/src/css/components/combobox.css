@@ -1,0 +1,109 @@
+.mcombobox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin: 8px;
+}
+.mcombobox__input{
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #afafaf;
+    border-radius: 4px;
+    box-sizing: border-box;
+    flex: 1;
+    outline: none;
+    border: none;
+}
+
+.mcombobox:has(.mcombobox__input:focus){
+    outline: 1px solid #50B83C;
+}
+.mcombobox__button{
+    height: 36px;
+    width: 36px;
+    border: none;
+    border-left: 1px solid #afafaf;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 36px;
+    border-radius: 0 4px 4px 0;
+}
+.mbutton--icon i{
+    font-size: 16px;
+}
+.mcombobox__data{
+    position: absolute;
+    top: calc(100% + 2px);
+    border: 1px solid #afafaf;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    row-gap: 4px;
+    padding: 8px;
+    overflow-y: auto;
+    max-height: 200px;
+    z-index: 1;
+}
+.mcombobox__data--hide{
+    display: none;
+}
+.mcombobox-item{
+    height: 36px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    cursor: pointer;
+
+}
+.mcombobox-item:hover{
+    background-color: #50b83c1a;
+}
+.--selected{
+    background-color: #50b83c1a;
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(100% + 2px);
+    border: 1px solid #ed0b0b;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    row-gap: 4px;
+    padding: 8px;
+    overflow-y: auto;
+    height: 200px;
+    z-index: 2;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after{
+    content: "";
+    width: 25px;
+    height: 25px;
+    border: 5px solid #dddddd;
+    border-top-color: #7449f5;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }to{
+        transform: rotate(1turn);
+    }
+}
+
