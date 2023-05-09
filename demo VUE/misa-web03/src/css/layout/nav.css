@@ -10,16 +10,22 @@
     box-sizing: border-box;
     min-width: 200px;
     box-sizing: border-box;
-    margin-right: 24px;
 }
 .nav__icon-menu{
-    margin: 0px 8px;
+    margin: 0px 20px;
 }
 
 .nav__icon-logo{
-    margin: 0 8px;
+    margin-right: 12px;
 }
 
+.nav__label{
+    font-family: Roboto Bold;
+    font-size: 20px;
+    color: #2F2F2F;
+    font-weight: 500;
+    margin-right: 40px;
+}
 /*Nav Center*/
 .nav--center {
     align-items: center;
@@ -50,16 +56,6 @@
     justify-content: right;
     flex: 1;
 }
-.nav__icon-cloud{
-
-}
-.nav__icon-notification{
-    margin-left: 25px;
-}
-.nav__icon-question{
-    margin-left: 25px;
-}
-.nav__icon-user{
-    margin-left: 22px;
-    margin-right: 24px;
+.nav__icon{
+    margin-right: 25px;
 }

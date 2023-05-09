@@ -1,6 +1,7 @@
-.slide-bar{
+.side-bar{
+    
 }
-.slide-bar__item{
+.side-bar__item{
     display: flex;
     margin: 2px 12px 0 12px;
     align-items: center;
@@ -11,16 +12,16 @@
 .router-link-active{
     background-color: #a7c4ff3e;
 }
-.router-link-active .slide-bar__item-name{
+.router-link-active .side-bar__item-name{
     color: #FFFFFF;
 }
-.slide-bar__item:hover{
+.side-bar__item:hover{
     background-color: #27395e90;
 }
-.slide-bar__item:nth-child(1){
+.side-bar__item:nth-child(1){
     margin-top: 20px;
 }
-.slide-bar__icon{
+.side-bar__icon{
     width: 24px;
     height: 24px;
     margin: 0 12px;
@@ -28,7 +29,7 @@
     align-items: center;
     justify-content: center;
 }
-.slide-bar__item-name{
+.side-bar__item-name{
     color: #869AB8;
     font-family: Roboto Medium;
 }

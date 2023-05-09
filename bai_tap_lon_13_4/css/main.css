@@ -15,7 +15,7 @@
 @import url(./layout/content.css);
 @import url(./layout/header.css);
 @import url(./layout/nav.css);
-@import url(./layout/slide-bar.css);
+@import url(./layout/side-bar.css);
 
 @import url(../assets/fonts/fontawesome-5.15.1/css/all.min.css);
 @import url(../assets/fonts/fontawesome-5.15.1/js/all.min.js);
@@ -47,7 +47,7 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 0px rgba(0, 0, 0, 0.132);
 }
-.container__slide-bar{
+.container__side-bar{
     width: 200px;
     height: calc(100vh - 56px);
     background-color: rgba(5, 5, 5, 0.815);
@@ -72,7 +72,7 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 0px rgba(0, 0, 0, 0.132);
 }
-.container__slide-bar{
+.container__side-bar{
     grid-row: 2/5;
     background-color: #041434;
     overflow-y: auto;

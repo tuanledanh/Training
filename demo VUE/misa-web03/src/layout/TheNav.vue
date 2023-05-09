@@ -16,10 +16,18 @@
         </div>
       </div>
       <div class="nav--right">
-        <div class="nav__icon-cloud icon icon--cloud"></div>
-        <div class="nav__icon-notification icon icon--notification"></div>
-        <div class="nav__icon-question icon icon--question"></div>
-        <div class="nav__icon-user icon icon--user"></div>
+        <div class="nav__icon">
+          <div class="icon--cloud"></div>
+        </div>
+        <div class="nav__icon">
+          <div class="icon--notification"></div>
+        </div>
+        <div class="nav__icon">
+          <div class="icon--question"></div>
+        </div>
+        <div class="nav__icon">
+          <div class="icon--user"></div>
+        </div>
       </div>
     </div>
 </template>

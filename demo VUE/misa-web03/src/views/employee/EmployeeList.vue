@@ -17,7 +17,13 @@
   <div class="content__table table">
     <div class="table__head head">
       <div class="head__checkbox">
-        <input type="checkbox" name="myCheckbox" value="1" v-model="selectedAll" @click="headOnClick"/>
+        <input
+          type="checkbox"
+          name="myCheckbox"
+          value="1"
+          v-model="selectedAll"
+          @click="headOnClick"
+        />
       </div>
       <div class="head__text">EmployeeCode</div>
     </div>
@@ -184,14 +190,14 @@ export default {
       this.$memitter.emit("onSelectedEmployeeEmitter", employee);
     },
 
-    headOnClick(){
-        if(this.selectedAll){
-            this.selectedAll = false;
-        }else{
-            this.selectedAll = true;
-        }
-        console.log(this.selectedAll);
-    }
+    headOnClick() {
+      if (this.selectedAll) {
+        this.selectedAll = false;
+      } else {
+        this.selectedAll = true;
+      }
+      console.log(this.selectedAll);
+    },
   },
   data() {
     return {

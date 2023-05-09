@@ -2,12 +2,13 @@
     background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -1157px -32px;
 	width: 16px;
 	height: 16px;
+	transform: scale(1.1875);
 }
 .icon--logo{
-    background: url('../../assets/favicon.ico') no-repeat;
-    width: 25px;
-    height: 25px;
-    background-size: cover;
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -1693px -920px;
+	width: 16px;
+	height: 16px;
+	transform: scale(2);
 }
 .icon--notification{
     background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -788px -30px;
