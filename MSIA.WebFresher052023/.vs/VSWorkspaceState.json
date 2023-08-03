@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MSIA.WebFresher052023.Application",
+    "\\MSIA.WebFresher052023.Application\\DTO",
+    "\\MSIA.WebFresher052023.Application\\DTO\\Depart",
+    "\\MSIA.WebFresher052023.Domain",
+    "\\MSIA.WebFresher052023.Domain\\Model",
+    "\\MSIA.WebFresher052023.Domain\\Model\\Base",
+    "\\MSIA.WebFresher052023.Infrastructure",
+    "\\MSIA.WebFresher052023.Infrastructure\\Repository",
+    "\\MSIA.WebFresher052023.Infrastructure\\Repository\\Base"
+  ],
+  "SelectedNode": "\\MSIA.WebFresher052023.API\\Controllers\\FixedAssetController.cs",
+  "PreviewInSolutionExplorer": false
+}

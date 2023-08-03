@@ -1,0 +1,15 @@
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\bin\Debug\net6.0\MSIA.WebFresher052023.Application.deps.json
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\bin\Debug\net6.0\MSIA.WebFresher052023.Application.dll
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\bin\Debug\net6.0\MSIA.WebFresher052023.Application.pdb
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\bin\Debug\net6.0\MSIA.WebFresher052023.Domain.dll
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\bin\Debug\net6.0\MSIA.WebFresher052023.Domain.pdb
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\obj\Debug\net6.0\MSIA.WebFresher052023.Application.csproj.AssemblyReference.cache
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\obj\Debug\net6.0\MSIA.WebFresher052023.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\obj\Debug\net6.0\MSIA.WebFresher052023.Application.AssemblyInfoInputs.cache
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\obj\Debug\net6.0\MSIA.WebFresher052023.Application.AssemblyInfo.cs
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\obj\Debug\net6.0\MSIA.WebFresher052023.Application.csproj.CoreCompileInputs.cache
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\obj\Debug\net6.0\MSIA.WebFresher052023.Application.csproj.CopyComplete
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\obj\Debug\net6.0\MSIA.WebFresher052023.Application.dll
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\obj\Debug\net6.0\refint\MSIA.WebFresher052023.Application.dll
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\obj\Debug\net6.0\MSIA.WebFresher052023.Application.pdb
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Application\obj\Debug\net6.0\ref\MSIA.WebFresher052023.Application.dll

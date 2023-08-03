@@ -1,0 +1,15 @@
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\bin\Debug\net6.0\MSIA.WebFresher052023.Infrastructure.deps.json
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\bin\Debug\net6.0\MSIA.WebFresher052023.Infrastructure.dll
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\bin\Debug\net6.0\MSIA.WebFresher052023.Infrastructure.pdb
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\bin\Debug\net6.0\MSIA.WebFresher052023.Domain.dll
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\bin\Debug\net6.0\MSIA.WebFresher052023.Domain.pdb
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\obj\Debug\net6.0\MSIA.WebFresher052023.Infrastructure.csproj.AssemblyReference.cache
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\obj\Debug\net6.0\MSIA.WebFresher052023.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\obj\Debug\net6.0\MSIA.WebFresher052023.Infrastructure.AssemblyInfoInputs.cache
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\obj\Debug\net6.0\MSIA.WebFresher052023.Infrastructure.AssemblyInfo.cs
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\obj\Debug\net6.0\MSIA.WebFresher052023.Infrastructure.csproj.CoreCompileInputs.cache
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\obj\Debug\net6.0\MSIA.WebFresher052023.Infrastructure.csproj.CopyComplete
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\obj\Debug\net6.0\MSIA.WebFresher052023.Infrastructure.dll
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\obj\Debug\net6.0\refint\MSIA.WebFresher052023.Infrastructure.dll
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\obj\Debug\net6.0\MSIA.WebFresher052023.Infrastructure.pdb
+D:\MisaCode\BE-HCSN\MSIA.WebFresher052023\MSIA.WebFresher052023.Infrastructure\obj\Debug\net6.0\ref\MSIA.WebFresher052023.Infrastructure.dll
